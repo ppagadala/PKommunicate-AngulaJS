@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="pkommunicateApp">
+<head>
+  <meta charset="utf-8">
+  <title>PKommunicate</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular.js"></script>
+  <script src="js/angular-animate.js"></script>
+  <script src="js/angular-route.js"></script>
+  <script src="js/angular-resource.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/Providers.js"></script>
+  <script src="js/services.js"></script>
+</head>
+<body>
+	<header>
+	<div class="headerarea" >
+		<img src="img/Shout-Out.png" class="shoutout img-rounded">
+		<h2 class="leftAlign">
+			ProKarma
+		</h2>
+		<h2 class="rightAlign">
+			PKommunicate
+		</h2>	
+	</div>
+	</header>
+	<nav data-ng-controller="indexCtrl">
+		<ul class="nav nav-pills">
+		  <li>
+			<a data-ng-href="#/home"> Home </a>
+		  </li>
+		  <li>
+			<a data-ng-href="#/post"> Post </a>
+		  </li>
+		  <li>
+			<a data-ng-href="#/search"> Search </a>
+		  </li>
+		  <li>
+			<a data-ng-href="#/admin"> Admin </a>
+		  </li>
+		  <ul class="nav nav-pills rightAlign">
+			<li>
+				<a data-ng-bind="user"></a>
+			</li>
+			<li>
+				<a> {{date | date:'MM/dd/yyyy'}} </a>
+			</li>
+			<li>
+				<a data-ng-href="#/logout"> Logout </a>
+			</li>
+		  </ul>
+		</ul>
+		
+	</nav>	
+	<div class="view-container">
+		<div data-ng-view class="view-frame"></div>
+	</div>
+	<footer>
+	<p>&copy; 2015 Prokarma. All rights reserved.</p>
+</footer>
+</body>
+</html>

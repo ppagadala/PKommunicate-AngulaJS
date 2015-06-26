@@ -1,0 +1,18 @@
+    {
+        "id": "01", 
+		"title": "Suggest a good place for team lunch",
+        "category": "1", 
+        "description": "The Next, kNext Generation\r\n\r\nExperience the future with Motorola XOOM with Wi-Fi the world's first tablet powered by Android 3.0 (Honeycomb).",
+		"name" : "Pradeep",
+		"email" : "ppagadala@prokarma.com",
+		"phone": "8008216958",
+		"imageUrl": ["img/phones/motorola-xoom-with-wi-fi.0.jpg","img/phones/motorola-xoom.0.jpg"],
+		"replies": [
+					{"repliedID":"01","repliedBy": "Bharath","repliedDesc": "Daspalla or Novotel, Hitex","repliedDate":"10/04/2015"},
+					{"repliedID":"02","repliedBy": "Arun","repliedDesc": "Paradise, patny","repliedDate":"0904/2015"},
+					{"repliedID":"03","repliedBy": "Rajasekhar","repliedDesc": "Kritunga, Ameerpet","repliedDate":"08/04/2015"},
+					{"repliedID":"04","repliedBy": "Laxmi Devi","repliedDesc": "Taj Banjara, Banjarahils","repliedDate":"07/04/2015"}
+				 ],
+		"date": "10/04/2015"
+    }
+	

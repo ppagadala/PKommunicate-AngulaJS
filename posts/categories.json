@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1, 
+		"title": "Food"
+    },
+	{
+        "id": 2, 
+		"title": "Fun Activities "
+    },
+	{
+        "id": 3, 
+		"title": "House Rental"
+    },
+	{
+        "id": 4, 
+		"title": "Gadgets"
+    },
+	{
+        "id": 5, 
+		"title": "Vehicle Pooling"
+    }
+]

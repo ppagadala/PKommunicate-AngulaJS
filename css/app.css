@@ -1,0 +1,131 @@
+/* app css stylesheet */
+header{
+      width: 100%;
+	  background: none repeat scroll 0 0 #4188a2;
+	  float: none;
+	  height: 70px;
+	  margin-top: 10px;
+	  font-family:Verdana,sans-serif;
+	  box-shadow: 5px 5px 5px grey;
+}
+footer{
+      width: 100%;
+	  background: none repeat scroll 0 0 #4188a2;
+	  float: none;
+	  height: 30px;
+	  margin-top: 10px;
+	  font-family:Verdana,sans-serif;
+	  box-shadow: 5px 5px 10px grey;
+}
+footer > p{
+	margin-left:45%;
+}
+nav{
+	  width: 100%;
+	  background: none repeat scroll 0 0 #4188a2;
+	  float: none;
+	  height: 30px;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	  font-family:Verdana,sans-serif;
+      box-shadow: 2px 2px 5px grey;
+      color: white;	  
+   }
+nav   a {
+	color:white;	
+}
+body {
+    font-family:Verdana,sans-serif;font-size:1.1em;
+}
+section{
+    margin:5px;margin-bottom:15px;padding:8px;
+    background-color:#ddd;
+}
+article{
+    margin: 1% 1% 1% 23%;padding:8px;
+    background-color:white;
+	width: 55%;
+	height: 55%;
+	box-shadow: 5px 5px 10px grey;
+} 
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+h3 {
+    color: black;
+    text-shadow: 1px 0px 1px #000000;
+}
+.leftAlign{
+  float: left;
+  color: white;
+}
+.rightAlign{
+  float: right;
+  color: white;
+}
+.centerAlign{
+  margin-left:27%;
+}  
+.shoutout {
+    float: right;
+    height: 65px;
+    margin: 3px 3px 5px 5px;
+    width: 65px;
+}
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}
+.form-group .help-block {
+  display: none;
+}
+ 
+.form-group.has-error .help-block {
+  display: block;
+}
+.form-horizontal .control-label {
+text-align: center;
+}
+.carousel-inner{
+  max-height: 200px !important;
+}
+.carousel{
+	width: 350px !important;
+	margin-bottom: 15px;
+	margin-right: 10px;
+}
+.carousel-inner > .item > img,.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+ }
+ textarea { 
+ resize:none; 
+ }
+ .btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+.table{
+	max-width : 60%;
+	margin-left: 50px;
+}
+tbody { 
+	 height: 100px; 
+	 overflow: auto;
+} 

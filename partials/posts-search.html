@@ -1,0 +1,74 @@
+<section>
+	<article>
+		<div>
+			<h3 class="centerAlign"> Help is on your way...!!!</h3>
+		</div>
+		<br/>
+		<div class="container">
+			<form class="form-horizontal" name="createPostForm" novalidate>
+				<div class="form-group form-group-sm">
+					<label for="name" class="col-sm-2 control-label">Whose post was it?</label>
+					<div class="col-sm-4">
+					  <input type="text" name="name" class="form-control" placeholder="Please Enter User Name" 
+					  data-ng-model="user.name" data-ng-maxlength="20">
+					</div>
+				</div>
+				<div class="form-group form-group-sm">
+					<label for="category" class="col-sm-2 control-label">Category?</label>
+					<div class="col-sm-4">
+					  <select name="category" class="form-control" data-ng-model="question.category" data-ng-options="category.id as category.title for category in categories" required>
+						<option value="">Select Category</option> 
+					  </select>
+					</div>	
+				 </div>
+				 <div class="form-group form-group-sm" show-errors='{showSuccess: true}'>
+					<label for="question" class="col-sm-2 control-label">Post is about?</label>
+					<div class="col-sm-4">
+					  <input type="text" name="question" class="form-control" id="inputQuestion" placeholder="Please Enter Your Question" spellcheck="true" 
+					  data-ng-model="question.title" data-ng-minlength="10" data-ng-maxlength="75" data-ng-trim="true">
+					  <p class="help-block" ng-show="createPostForm.question.$error.minlength">The Question title should be minimum of 10 characters</p>
+					  <p class="help-block" ng-show="createPostForm.question.$error.maxlength">The Question title should be maximum of 75 characters</p>
+					</div>
+				</div>				
+				<!---<div class="form-group form-group-sm">
+					<label for="date" class="col-sm-2 control-label">Date Range?</label>
+					<div class="col-sm-2">
+						<input type='text' class="form-control" data-ng-model="date" jqdatepicker/>
+					</div>
+				</div>--->
+				<br/>
+				<div class="form-group form-group-sm">
+					<div class="col-sm-offset-3 col-sm-13">
+					  <div class="col-xs-1">
+						<button type="button" class="btn btn-primary btn-xs" data-ng-click="search()">Help</button>
+					  </div>
+					  <div class="col-xs-1">
+						<button type="button" class="btn btn-primary btn-xs" data-ng-click="reset()">Clear</button>
+					  </div>
+					</div>
+				</div>
+				<div class="form-group form-group-sm" ng-if="showResults">
+					<label for="description" class="col-sm-2 control-label">Search Results:</label>
+				</div>
+				<div class="form-group form-group-sm" ng-if="showResults">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Posted by</th>
+								<th>Post</th>								
+								<th>Date</th>
+								<th>No. of Replies</th>
+							</tr>
+						</thead>
+						<tr data-ng-repeat="post in searchResults" ng-class-even="'info'" ng-class-odd="'active'" >
+							<td>{{post.name}}</td>
+							<td><a href="#/posts/{{post.id}}">{{post.title}}</a></td>														
+							<td>{{post.date}}</td>
+							<td>{{post.NbrOfReplies}}</td>							
+						</tr>
+					</table>
+				</div>
+			</form>
+		</div>	
+	</article>
+</section>
